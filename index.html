@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ValidateFormJS</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Validate form JS</title>
+  <style>
+    .errorMessage {
+      color: red;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Kontakt</h2>
+  <p class="bg-danger"></p>
+  <div class="col-md-6 ">
+    <form class="contact-form" name="contact-form" method="post" action="#" id="amarolMainForm">
+      <!-- <hr> -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" id="myname" name="myname" placeholder="Imię  Nazwisko*" class="form-control input-lg" style="visibility: visible; ">
+            <div class="errorMessage">
+              <div id="errorMyname"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email*" class="form-control input-lg" style="visibility: visible; ">
+            <div class="errorMessage">
+              <div id="errorEmail"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="tel" name="phone" placeholder="Telefon" class="form-control input-lg" style="visibility: visible; ">
+            <div class="errorMessage">
+              <div id="errorPhone"></div>
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- <div class="col-sm-8"> -->
+          <div class="form-group">
+            <textarea id="comments" name="comments" class="form-control input-lg" rows="6" cols="" placeholder="Treść" style="visibility: visible; "></textarea>
+            <div class="errorMessage">
+              <div id="errorComments"></div>
+              <div id="errorReCAPTCHA"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+        <input type="hidden" name="scrolltoform" value="TZCB">
+        <input type="hidden" name="submitted" id="submitted" value="true">
+        <input type="submit" name="submit_button" id="submit_button" value="Wyślij" class="contact-submit" style="visibility: visible; ">
+        <div class="g-recaptcha" data-sitekey="6LeFX0MUAAAAAJy-6BFTeSDyT7W113v2Fmr87IHk">
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <script src="./validate-amarol.js"></script>
+</body>
+
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
